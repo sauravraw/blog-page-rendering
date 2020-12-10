@@ -6,6 +6,7 @@ export const relatedLinks = (links) => {
 
 	links.map((link) => {
 		let li = document.createElement("li");
+		li.classList = "related-link-list";
 		li.innerText = link.title;
 		li.id = link.id;
 		li.title = "Related Links";

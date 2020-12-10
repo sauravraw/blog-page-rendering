@@ -6,6 +6,7 @@ export const blogImage = (imageURL) => {
 	const img = document.createElement("img");
 	img.src = imageURL;
 	img.alt = "Some Desc";
+	img.title = "Blog Images";
 
 	div.appendChild(img);
 
