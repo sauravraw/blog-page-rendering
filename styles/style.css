@@ -60,12 +60,15 @@ a {
 /* main start */
 main {
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
 }
 
 main section {
 	overflow: hidden;
 	margin-top: 70px;
 	width: 75%;
+	margin-right: 330px;
 }
 
 .blog-image img {
@@ -83,7 +86,7 @@ main section {
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0 0 0 30px;
+	padding: 0 0 0 30px;
 }
 .blog-content h1,
 p {
@@ -101,8 +104,8 @@ p {
 }
 
 aside {
+	margin-top: 35vh;
 	position: fixed;
-	margin: 40vh 0 0 73vw;
 }
 h2 {
 	font-size: 23px;
@@ -171,15 +174,20 @@ i {
 /* tablet view start */
 
 @media (max-width: 768px) {
+	main section {
+		margin-top: 70px;
+		width: 88%;
+		margin-right: 210px;
+	}
 	.blog-image img {
-		margin: 0 0 0 11vw;
+		margin: 20px 70px;
 	}
 	.nav-links {
 		width: 30px;
 		padding: 0 9px;
 	}
 	aside {
-		margin: 25vw 0 0 73vw;
+		padding: 15vh 0 0 73vw;
 	}
 	i {
 		padding: 0 20px;
@@ -206,30 +214,36 @@ i {
 	}
 	.hamburger {
 		display: block;
-		margin-left: 150px;
+		float: right;
 	}
 	main {
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 	main section {
 		width: 100%;
+		margin: 60px 0 0 0;
 	}
 	.blog-image img {
 		width: 80%;
 		height: 80%;
 		margin: 10px 0 0 10vw;
 	}
+	.blog-content h1 {
+		width: 90%;
+	}
 	p {
 		font-size: 17px;
-		margin: 0 20px 0 0;
+		width: 90%;
 		text-align: justify;
 	}
 	aside {
-		margin: 20px 0 0 70px;
+		margin: 20px 0 0 50px;
+		padding: 0;
 		position: relative;
 	}
 	footer {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -242,9 +256,23 @@ i {
 	.social-icons a {
 		padding: 0 30px;
 	}
+	.social-icons a:last-child {
+		padding: 0;
+	}
+	i {
+		padding: 0;
+	}
 
 	.legal {
 		display: flex;
 		flex-direction: column;
+	}
+}
+@media (max-width: 320px) {
+	main section {
+		width: 120%;
+	}
+	p {
+		margin: 0;
 	}
 }
