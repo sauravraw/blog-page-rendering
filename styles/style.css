@@ -104,7 +104,7 @@ p {
 
 aside {
 	margin-top: 35vh;
-	margin-right: 25px;
+	width: 27%;
 	position: fixed;
 }
 h2 {
@@ -274,12 +274,6 @@ i {
 	}
 }
 @media (max-width: 320px) {
-	main section {
-		width: 120%;
-	}
-	footer {
-		width: 120%;
-	}
 	p {
 		margin: 0;
 	}
