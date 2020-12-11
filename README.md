@@ -1,6 +1,6 @@
 # blog-page-rendering
 
-# The following project blog page is made using Javascript Async function. The page is dummy of starbucks. Solely designed for the purpose of learning.
+The following project blog page is made using Javascript Async function. The page is dummy of starbucks. Solely designed for the purpose of learning.
 
 # live link
 https://sauravraw.github.io/blog-page-rendering/
